@@ -40,6 +40,12 @@ module enemy_main(input BASYS_CLOCK, output [7:0] JB);
 .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), .cs(JB[0]), .sdin(JB[1]), 
 .sclk(JB[3]), .d_cn(JB[4]), .resn(JB[5]), .vccen(JB[6]), .pmoden(JB[7])); 
     
+    // map
+    wire [7:0]platform_width; wire [7:0]platform_x; wire [7:0]platform_y; wire [15:0]oled_data_map;
+    assign platform_width = 25;
+    assign platform_x = 15;
+    assign platform_y = 40;
+    
     // Enemy stuff 
     enemy_level level (.clk(BASYS_CLOCK), .num_small(num_small), .num_big(num_big), .trig_spawn(trigger_spawn));
     
@@ -47,13 +53,21 @@ module enemy_main(input BASYS_CLOCK, output [7:0] JB);
         .num_small(num_small), .num_big(num_big), .activated_enemy(enemy_health));
     
     enemy_movement #(.MAX_NUM_ENEMIES(MAX_NUM_ENEMIES), .size(enemy_size)) move ( .clk(BASYS_CLOCK), .spawn1(enemy_spawn1),  .spawn2(enemy_spawn2), 
-        .activated_enemy(enemy_health), .xref(enemy_xref), .yref(enemy_yref));
+        .activated_enemy(enemy_health), .xref(enemy_xref), .yref(enemy_yref),
+        .platform_width(platform_width), .x_obs(platform_x), .y_obs(platform_y));
     
     draw_enemy #(.MAX_NUM_ENEMIES(MAX_NUM_ENEMIES), .size(enemy_size)) draw (.p_index(pixel_index), .activated_enemy(enemy_health), 
         .xref(enemy_xref), .yref(enemy_yref), .oled_data(oled_data_enemy));
     
-    always @(posedge BASYS_CLOCK) begin 
-        oled_data <= oled_data_enemy;
+    draw_map bg(.p_index(pixel_index), .oled_data(oled_data_map), 
+        .platform_width(platform_width), .platform_x(platform_x),  .platform_y(platform_y));
+            
+    
+    always @(pixel_index) begin 
+        oled_data <= oled_data_map;
+        if (oled_data_enemy != 1) begin 
+            oled_data <= oled_data_enemy;
+        end
 //        oled_data <= 16'b0000000000011111;   
     end
     

@@ -28,7 +28,7 @@ output reg [15:0] oled_data);
     wire [7:0]x = p_index % 96;
     wire [7:0]y = p_index / 96;
     initial begin 
-        oled_data = 0;
+        oled_data = 1;
     end
     always @(p_index) begin 
      oled_data <= 0;
@@ -46,7 +46,7 @@ module spawn_enemy #(parameter MAX_ENEMIES = 15)(input trig_spawn, input clk, in
 output reg [3:0] activated_enemy [0:MAX_ENEMIES - 1]);
       // activated_enemy is the health 0: dead, 1-3: small 4-5 big; number + 5 = angry 
     wire spawnhz;
-    flexy_clk half_clk (clk, 9_999_999, spawnhz); //249_999
+    flexy_clk half_clk (clk, 99_999_999, spawnhz); //249_999
 
     reg [3:0]spawned_small = 0;
     reg [3:0]spawned_big = 0;
