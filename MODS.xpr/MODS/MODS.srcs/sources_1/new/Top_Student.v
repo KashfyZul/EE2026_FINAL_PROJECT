@@ -47,7 +47,6 @@ module Top_Student (
         .pixel_data(pixel_data)
         );
     
-    
 Oled_Display oleddisp (
     .clk(clk_6p25M), 
     .reset(0), // ground
