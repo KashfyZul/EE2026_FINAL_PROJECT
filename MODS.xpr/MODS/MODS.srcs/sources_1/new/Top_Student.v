@@ -30,7 +30,20 @@ module Top_Student (
     assign x = pixel_index%96;
     assign y = pixel_index/96;
     
-    s1(.xref(48), .x(x), .yref(32), .y(y), .clock(clk), .btnU(btnU), .btnL(btnL), .btnR(btnR), .oled_data(pixel_data)
+    // update with e3-e5 assuming 5 enemies
+    // update with xref_muffin and yref_muffin
+    wire [6:0]xref_std;
+    wire [5:0]yref_std;
+    wire [6:0]xref_e1;
+    wire [5:0]yref_e1;
+    wire [6:0] xref_e2;
+    wire [5:0] yref_e2;
+    pixel_control pixycont (
+        x, y, clk, btnU, btnL, btnR,
+        xref_std, yref_std, 
+        xref_e1, yref_e1, 
+        xref_e2, yref_e2,
+        pixel_data
         );
     
 Oled_Display oleddisp (
