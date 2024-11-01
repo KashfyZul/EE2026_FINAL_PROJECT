@@ -38,13 +38,15 @@ module Top_Student (
     wire [5:0]yref_e1;
     wire [6:0] xref_e2;
     wire [5:0] yref_e2;
+    wire [2:0] stnum; // decide which sprite to show. eg case(0): medicine, case(1): ... etc
     pixel_control pixycont (
-        x, y, clk, btnU, btnL, btnR,
-        xref_std, yref_std, 
-        xref_e1, yref_e1, 
-        xref_e2, yref_e2,
-        pixel_data
+        .x(x), .y(y), .clock(clk), .btnU(btnU), .btnL(btnL), .btnR(btnR),
+        .xref_std(xref_std), .yref_std(yref_std), .stnum(stnum), 
+        .xref_e1(xref_e1), .yref_e1(yref_e1), 
+        .xref_e2(xref_e2), .yref_e2(yref_e2),
+        .pixel_data(pixel_data)
         );
+    
     
 Oled_Display oleddisp (
     .clk(clk_6p25M), 
