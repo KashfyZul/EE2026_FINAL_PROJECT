@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.sim/sim_1/synth/timing/xsim/tb_LFSR_Random_Bit_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_random
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sim_1/new/tb_LFSR_Random_Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LFSR_Random_Bit

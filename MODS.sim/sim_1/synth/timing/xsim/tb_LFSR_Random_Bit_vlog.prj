@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_LFSR_Random_Bit_time_synth.v" \
+"../../../../../MODS.srcs/sim_1/new/tb_LFSR_Random_Bit.v" \
+
+# Do not sort compile order
+nosort
