@@ -21,19 +21,17 @@
 
 // systemverilog file
 
-module pixel_control(
+module pixel_control #(parameter MAX_ENEMIES = 5, parameter MAX_PROJECTILES = 5)(
     input [6:0] x, [6:0] y,
     input clock, btnU, btnL, btnR,
     input [6:0] xref_std, input [6:0] yref_std, 
     input faceleft, input vertical_movement, // y stationary: vert_movement == 1
-    input [6:0] xref_e [0:14], input [6:0] yref_e [0:14], input [2:0] enemy_health [0:14], input [14:0] angry,
-    input [6:0] xref_muffin, [6:0] yref_muffin, [6:0] xref_p [0:5], [6:0] yref_p [0:5],
+    input [6:0] xref_e [0:MAX_ENEMIES], input [6:0] yref_e [0:MAX_ENEMIES], input [2:0] enemy_health [0:MAX_ENEMIES], input [MAX_ENEMIES:0] angry,
+    input [6:0] xref_muffin, [6:0] yref_muffin, [6:0] xref_p [0:MAX_PROJECTILES], [6:0] yref_p [0:MAX_PROJECTILES],
     input [2:0] stnum,
     input [5:0] is_active, 
     output reg [15:0] pixel_data
-    );
-    parameter MAX_ENEMIES = 14; 
-    parameter MAX_PROJECTILES = 5;
+    ); 
     reg [12:0] pixel_index;
     wire [15:0] s_oled;
     wire [15:0] m_oled;
@@ -53,7 +51,7 @@ module pixel_control(
         .enemy_health(enemy_health), .angry(angry),
         .x(x), .y(y), .xref(xref_e), .yref(yref_e), .oled_data(e_oled));
         
-    projectiles_sprite dieeeeeeeee (
+    projectiles_sprite#(.MAX_NUM_PROJECTILES(MAX_PROJECTILES)) dieeeeeeeee (
         .clk(clock), .x(x), .y(y), .char_no(stnum), .faceleft(faceleft), .is_active(is_active), .x_ref(xref_p), .y_ref(yref_p), .oled_data(p_oled)
         );
                 
