@@ -1,0 +1,1363 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov  4 01:54:52 2024
+# Process ID: 44908
+# Current directory: C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 356.824 ; gain = 99.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:15]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clock_signal' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/flexible_clock_signal.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clock_signal' (1#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/flexible_clock_signal.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_control' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/pixel_control.v:24]
+	Parameter MAX_ENEMIES bound to: 14 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'landscape3.mem' is read successfully [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/pixel_control.v:55]
+INFO: [Synth 8-6157] synthesizing module 'student_sprites' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 's1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:24]
+INFO: [Synth 8-6157] synthesizing module 's1r1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:87]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:110]
+INFO: [Synth 8-6155] done synthesizing module 's1r1' (2#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:87]
+INFO: [Synth 8-6157] synthesizing module 's1r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:121]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:144]
+INFO: [Synth 8-6155] done synthesizing module 's1r2' (3#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:121]
+INFO: [Synth 8-6157] synthesizing module 's1r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:155]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:178]
+INFO: [Synth 8-6155] done synthesizing module 's1r3' (4#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:155]
+INFO: [Synth 8-6157] synthesizing module 's1j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:190]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:212]
+INFO: [Synth 8-6155] done synthesizing module 's1j' (5#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:190]
+INFO: [Synth 8-6155] done synthesizing module 's1' (6#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:24]
+WARNING: [Synth 8-350] instance 'draw_s1' of module 's1' requires 12 connections, but only 11 given [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:37]
+INFO: [Synth 8-6157] synthesizing module 's2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:24]
+INFO: [Synth 8-6157] synthesizing module 's2r1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:72]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:91]
+INFO: [Synth 8-6155] done synthesizing module 's2r1' (7#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:72]
+INFO: [Synth 8-6157] synthesizing module 's2r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:103]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:122]
+INFO: [Synth 8-6155] done synthesizing module 's2r2' (8#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:103]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's2r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:37]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's2r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:37]
+INFO: [Synth 8-6157] synthesizing module 's2r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:134]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:153]
+INFO: [Synth 8-6155] done synthesizing module 's2r3' (9#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:134]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's2r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:38]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's2r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:38]
+INFO: [Synth 8-6157] synthesizing module 's2j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:165]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:184]
+INFO: [Synth 8-6155] done synthesizing module 's2j' (10#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:165]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's2j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:39]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's2j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 's2' (11#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:24]
+WARNING: [Synth 8-689] width (7) of port connection 'yref' does not match port width (6) of module 's2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:42]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 's2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:42]
+INFO: [Synth 8-6157] synthesizing module 's3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:24]
+INFO: [Synth 8-6157] synthesizing module 's3r1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:75]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:94]
+INFO: [Synth 8-6155] done synthesizing module 's3r1' (12#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:75]
+INFO: [Synth 8-6157] synthesizing module 's3r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:106]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:125]
+INFO: [Synth 8-6155] done synthesizing module 's3r2' (13#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:106]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's3r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:37]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's3r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:37]
+INFO: [Synth 8-6157] synthesizing module 's3r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:137]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:156]
+INFO: [Synth 8-6155] done synthesizing module 's3r3' (14#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:137]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's3r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:38]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's3r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:38]
+INFO: [Synth 8-6157] synthesizing module 's3j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:168]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:187]
+INFO: [Synth 8-6155] done synthesizing module 's3j' (15#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:168]
+WARNING: [Synth 8-689] width (6) of port connection 'yref' does not match port width (7) of module 's3j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:39]
+WARNING: [Synth 8-689] width (6) of port connection 'y' does not match port width (7) of module 's3j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:39]
+INFO: [Synth 8-6155] done synthesizing module 's3' (16#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:24]
+WARNING: [Synth 8-689] width (7) of port connection 'yref' does not match port width (6) of module 's3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:46]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (6) of module 's3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:46]
+INFO: [Synth 8-6157] synthesizing module 's4' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:24]
+INFO: [Synth 8-6157] synthesizing module 's4r1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:87]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:110]
+INFO: [Synth 8-6155] done synthesizing module 's4r1' (17#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:87]
+INFO: [Synth 8-6157] synthesizing module 's4r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:121]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:144]
+INFO: [Synth 8-6155] done synthesizing module 's4r2' (18#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:121]
+INFO: [Synth 8-6157] synthesizing module 's4r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:155]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:178]
+INFO: [Synth 8-6155] done synthesizing module 's4r3' (19#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:155]
+INFO: [Synth 8-6157] synthesizing module 's4j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:189]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:211]
+INFO: [Synth 8-6155] done synthesizing module 's4j' (20#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:189]
+INFO: [Synth 8-6155] done synthesizing module 's4' (21#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:24]
+WARNING: [Synth 8-350] instance 'draw_s4' of module 's4' requires 12 connections, but only 11 given [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:49]
+INFO: [Synth 8-6157] synthesizing module 's5' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:24]
+INFO: [Synth 8-6157] synthesizing module 's5r1' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:87]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:110]
+INFO: [Synth 8-6155] done synthesizing module 's5r1' (22#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:87]
+INFO: [Synth 8-6157] synthesizing module 's5r2' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:121]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:144]
+INFO: [Synth 8-6155] done synthesizing module 's5r2' (23#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:121]
+INFO: [Synth 8-6157] synthesizing module 's5r3' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:155]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:178]
+INFO: [Synth 8-6155] done synthesizing module 's5r3' (24#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:155]
+INFO: [Synth 8-6157] synthesizing module 's5j' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:189]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:211]
+INFO: [Synth 8-6155] done synthesizing module 's5j' (25#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:189]
+INFO: [Synth 8-6155] done synthesizing module 's5' (26#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:24]
+WARNING: [Synth 8-350] instance 'draw_s5' of module 's5' requires 12 connections, but only 11 given [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:59]
+WARNING: [Synth 8-567] referenced signal 'stnum' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+WARNING: [Synth 8-567] referenced signal 's1_oled' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+WARNING: [Synth 8-567] referenced signal 's2_oled' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+WARNING: [Synth 8-567] referenced signal 's3_oled' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+WARNING: [Synth 8-567] referenced signal 's4_oled' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+WARNING: [Synth 8-567] referenced signal 's5_oled' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'student_sprites' (27#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'muffin_sprite' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:23]
+WARNING: [Synth 8-567] referenced signal 'xref' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'yref' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'white' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'darkred' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'yellow' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'black' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'placeholder' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'muffin_sprite' (28#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enemies_sprite' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:24]
+	Parameter MAX_NUM_ENEMIES bound to: 14 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:61]
+WARNING: [Synth 8-567] referenced signal 'angry' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'enemy_health' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'placeholder' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'xref' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:35]
+WARNING: [Synth 8-567] referenced signal 'yref' should be on the sensitivity list [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'enemies_sprite' (29#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:24]
+WARNING: [Synth 8-6014] Unused sequential element pixel_index_reg was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/pixel_control.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_control' (30#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/pixel_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (31#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[8][6:0]' into 'xref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[9][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[10][6:0]' into 'xref_e_reg[2][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[11][6:0]' into 'xref_e_reg[3][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[12][6:0]' into 'xref_e_reg[4][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[13][6:0]' into 'xref_e_reg[5][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'xref_e_reg[14][6:0]' into 'xref_e_reg[6][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[1][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[2][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[3][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[4][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[5][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[6][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[7][6:0]' into 'yref_e_reg[0][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[8][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[9][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[10][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[11][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[12][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[13][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'yref_e_reg[14][6:0]' into 'xref_e_reg[1][6:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[6][2:0]' into 'enemy_health_reg[0][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[7][2:0]' into 'enemy_health_reg[1][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[8][2:0]' into 'enemy_health_reg[2][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[9][2:0]' into 'enemy_health_reg[3][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[10][2:0]' into 'enemy_health_reg[4][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[11][2:0]' into 'enemy_health_reg[5][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[12][2:0]' into 'enemy_health_reg[0][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[13][2:0]' into 'enemy_health_reg[1][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-4471] merging register 'enemy_health_reg[14][2:0]' into 'enemy_health_reg[2][2:0]' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[8] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[9] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[10] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[11] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[12] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[13] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element xref_e_reg[14] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:60]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[1] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[2] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[3] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[4] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[5] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[6] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[7] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[8] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[9] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[10] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[11] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[12] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[13] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element yref_e_reg[14] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:61]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[6] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[7] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[8] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[9] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[10] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[11] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[12] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[13] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+WARNING: [Synth 8-6014] Unused sequential element enemy_health_reg[14] was removed.  [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (32#1) [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/Top_Student.v:15]
+WARNING: [Synth 8-3331] design muffin_sprite has unconnected port clock
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[12]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[11]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[10]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[9]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[8]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[7]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[6]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[5]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[4]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[3]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[2]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[1]
+WARNING: [Synth 8-3331] design s5 has unconnected port pixel_index[0]
+WARNING: [Synth 8-3331] design s5 has unconnected port btnU
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[12]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[11]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[10]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[9]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[8]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[7]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[6]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[5]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[4]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[3]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[2]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[1]
+WARNING: [Synth 8-3331] design s4 has unconnected port pixel_index[0]
+WARNING: [Synth 8-3331] design s4 has unconnected port btnU
+WARNING: [Synth 8-3331] design s3 has unconnected port btnU
+WARNING: [Synth 8-3331] design s2 has unconnected port btnU
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[12]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[11]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[10]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[9]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[8]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[7]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[6]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[5]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[4]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[3]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[2]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[1]
+WARNING: [Synth 8-3331] design s1 has unconnected port pixel_index[0]
+WARNING: [Synth 8-3331] design s1 has unconnected port btnU
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port btnD
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 461.723 ; gain = 204.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 461.723 ; gain = 204.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 461.723 ; gain = 204.621
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 810.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "slw_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:110]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:144]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:178]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s1.v:212]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:91]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:122]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:153]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s2.v:184]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:94]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:125]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:156]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s3.v:187]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:110]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:144]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:178]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s4.v:211]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:110]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:144]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:178]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/s5.v:211]
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemycolour" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_data_reg' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/student_control.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'oled_data_reg' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/muffin_sprite.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'oled_data_reg' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'enemycolour_reg' [C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/enemies_sprite.v:40]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |pixel_control__GB0 |           1|     41663|
+|2     |pixel_control__GB1 |           1|     41580|
+|3     |Top_Student__GC0   |           1|      2907|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 36    
+	   4 Input     32 Bit       Adders := 36    
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 104   
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 26    
+	               15 Bit    Registers := 1     
+	                7 Bit    Registers := 9     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 47    
+	  32 Input     32 Bit        Muxes := 1     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 235   
+	   6 Input     16 Bit        Muxes := 28    
+	   7 Input     16 Bit        Muxes := 29    
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 7     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	   6 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                7 Bit    Registers := 9     
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module muffin_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module enemies_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 15    
+	   4 Input     32 Bit       Adders := 15    
+	   2 Input      8 Bit       Adders := 30    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 116   
+	   6 Input     16 Bit        Muxes := 28    
+	   7 Input     16 Bit        Muxes := 29    
+	   8 Input     16 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   6 Input      1 Bit        Muxes := 10    
+Module s1r1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module s1r2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module s1r3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module s1j 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module s1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+Module s2r1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     15 Bit        Muxes := 1     
+Module s2r2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     15 Bit        Muxes := 1     
+Module s2r3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     15 Bit        Muxes := 1     
+Module s2j 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 2     
+Module s2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module s3r1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module s3r2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module s3r3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module s3j 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module s3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module s4r1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s4r2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 1     
+Module s4r3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 1     
+Module s4j 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+Module s5r1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s5r2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s5r3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s5j 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+Module s5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+Module student_sprites 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+Module pixel_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 34    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+Module flexible_clock_signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oled_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "oleddisp/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk6p25M/slw_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "oleddisp/fsm_next_state0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port btnD
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[0]
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/eeeeenemies/enemycolour_reg[4]' (LD) to 'pixyconti_1/eeeeenemies/enemycolour_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[6]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[7]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[5]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[1]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[3]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[15]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[14]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[12]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[13]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[9]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[10]' (LD) to 'pixyconti_1/mooooooooofinnnnnnnn/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_1/eeeeenemies/oled_data_reg[4]' (LD) to 'pixyconti_1/eeeeenemies/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[1]' (FD) to 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[1]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[2]' (FD) to 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[2]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[3]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[4]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[4]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5r1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s5/st5j/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4r1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s4/st4j/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s3/st3r3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s3/st3j/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s2/st2r3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[5]' (FD) to 'pixyconti_2/studcont/draw_s2/st2j/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[5]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1j/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[6]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r2/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[6]' (FDE) to 'pixyconti_2/studcont/draw_s1/st1r3/oled_data_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_2/\studcont/draw_s4 /st4r2/\oled_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_2/\studcont/draw_s4 /st4r3/\oled_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_2/\studcont/draw_s4 /st4r1/\oled_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_2/\studcont/draw_s4 /st4j/\oled_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_2/\studcont/draw_s4 /\oled_data_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module s4r1.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module s4r2.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module s4r3.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module s4j.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module s4.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\xref_e_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\xref_e_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[13] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pixyconti_1/eeeeenemies/\enemycolour_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[15]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[14]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[13]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[12]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[11]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[10]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[9]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[8]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[7]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[6]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[5]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[3]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[2]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[1]) is unused and will be removed from module enemies_sprite.
+WARNING: [Synth 8-3332] Sequential element (enemycolour_reg[0]) is unused and will be removed from module enemies_sprite.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:04 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|pixel_control | p_0_out    | 8192x16       | LUT            | 
+|Top_Student   | p_0_out    | 8192x16       | LUT            | 
++--------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |pixel_control__GB0 |           1|      4152|
+|2     |pixel_control__GB1 |           1|      5332|
+|3     |Top_Student__GC0   |           1|      1049|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:01:15 . Memory (MB): peak = 810.309 ; gain = 553.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:17 . Memory (MB): peak = 837.816 ; gain = 580.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |pixel_control__GB0 |           1|      4152|
+|2     |Top_Student_GT0    |           1|      6381|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:01:19 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:01:20 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:01:20 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   452|
+|3     |LUT1   |   344|
+|4     |LUT2   |   995|
+|5     |LUT3   |   460|
+|6     |LUT4   |   408|
+|7     |LUT5   |   509|
+|8     |LUT6   |  1694|
+|9     |MUXF7  |   163|
+|10    |MUXF8  |    19|
+|11    |FDE_1  |    32|
+|12    |FDRE   |   549|
+|13    |LD     |    35|
+|14    |IBUF   |     5|
+|15    |OBUF   |     7|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------+------+
+|      |Instance                 |Module                |Cells |
++------+-------------------------+----------------------+------+
+|1     |top                      |                      |  5675|
+|2     |  clk6p25M               |flexible_clock_signal |    52|
+|3     |  oleddisp               |Oled_Display          |  2678|
+|4     |  pixycont               |pixel_control         |  2885|
+|5     |    eeeeenemies          |enemies_sprite        |   234|
+|6     |    mooooooooofinnnnnnnn |muffin_sprite         |    26|
+|7     |    studcont             |student_sprites       |  1441|
+|8     |      draw_s1            |s1                    |   268|
+|9     |        st1j             |s1j                   |    38|
+|10    |        st1r1            |s1r1                  |    46|
+|11    |        st1r2            |s1r2                  |    31|
+|12    |        st1r3            |s1r3                  |    31|
+|13    |      draw_s2            |s2                    |   293|
+|14    |        st2j             |s2j                   |    34|
+|15    |        st2r1            |s2r1                  |    51|
+|16    |        st2r2            |s2r2                  |    37|
+|17    |        st2r3            |s2r3                  |    30|
+|18    |      draw_s3            |s3                    |   266|
+|19    |        st3j             |s3j                   |    29|
+|20    |        st3r1            |s3r1                  |    50|
+|21    |        st3r2            |s3r2                  |    28|
+|22    |        st3r3            |s3r3                  |    28|
+|23    |      draw_s4            |s4                    |   237|
+|24    |        st4j             |s4j                   |    27|
+|25    |        st4r1            |s4r1                  |    45|
+|26    |        st4r2            |s4r2                  |    25|
+|27    |        st4r3            |s4r3                  |    25|
+|28    |      draw_s5            |s5                    |   353|
+|29    |        st5j             |s5j                   |    64|
+|30    |        st5r1            |s5r1                  |    70|
+|31    |        st5r2            |s5r2                  |    49|
+|32    |        st5r3            |s5r3                  |    54|
++------+-------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 41 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:01:11 . Memory (MB): peak = 881.809 ; gain = 276.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:01:21 . Memory (MB): peak = 881.809 ; gain = 624.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 706 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 67 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+  LD => LDCE: 35 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+370 Infos, 192 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:01:25 . Memory (MB): peak = 881.809 ; gain = 637.770
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 881.809 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 01:56:22 2024...

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 17 14:34:58 2024
+# Process ID: 10576
+# Current directory: C:/Users/bluey/Documents/ee2026 local/project/MODSnew
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2372 C:\Users\bluey\Documents\ee2026 local\project\MODSnew\MODS.xpr
+# Log file: C:/Users/bluey/Documents/ee2026 local/project/MODSnew/vivado.log
+# Journal file: C:/Users/bluey/Documents/ee2026 local/project/MODSnew\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/flexible_clock_signal.v} w ]
+add_files {{C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/flexible_clock_signal.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/std1r1.v} w ]
+add_files {{C:/Users/bluey/Documents/ee2026 local/project/MODSnew/MODS.srcs/sources_1/new/std1r1.v}}
+update_compile_order -fileset sources_1
