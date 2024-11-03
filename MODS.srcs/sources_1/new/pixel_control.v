@@ -27,15 +27,18 @@ module pixel_control(
     input [6:0] xref_std, input [6:0] yref_std, 
     input faceleft, input vertical_movement, // y stationary: vert_movement == 1
     input [6:0] xref_e [0:14], input [6:0] yref_e [0:14], input [2:0] enemy_health [0:14], input [14:0] angry,
-    input [6:0] xref_muffin, [6:0] yref_muffin,
+    input [6:0] xref_muffin, [6:0] yref_muffin, [6:0] xref_p [0:5], [6:0] yref_p [0:5],
     input [2:0] stnum,
+    input [5:0] is_active, 
     output reg [15:0] pixel_data
     );
     parameter MAX_ENEMIES = 14; 
+    parameter MAX_PROJECTILES = 5;
     reg [12:0] pixel_index;
     wire [15:0] s_oled;
     wire [15:0] m_oled;
     wire [15:0] e_oled;
+    wire [15:0] p_oled;
     integer i;
     student_sprites studcont(
         .x(x), .y(y), .xref_std(xref_std), .yref_std(yref_std), .clock(clock), 
@@ -50,6 +53,10 @@ module pixel_control(
         .enemy_health(enemy_health), .angry(angry),
         .x(x), .y(y), .xref(xref_e), .yref(yref_e), .oled_data(e_oled));
         
+    projectiles_sprite dieeeeeeeee (
+        .clk(clock), .x(x), .y(y), .char_no(stnum), .faceleft(faceleft), .is_active(is_active), .x_ref(xref_p), .y_ref(yref_p), .oled_data(p_oled)
+        );
+                
         reg [15:0] memory [0:6143]; // memory for a 96x64 image
         initial begin
         $readmemh("landscape3.mem", memory);
@@ -59,19 +66,27 @@ module pixel_control(
     always @ (posedge clock) begin   
         pixel_index = x + 96 * y;
         pixel_data <= memory[pixel_index]; 
-        if (x <= xref_std + 7 && x >= xref_std && y <= yref_std + 7 && y >= yref_std) begin
-            if (s_oled != 1) pixel_data <= s_oled;
-            else pixel_data <= memory[pixel_index]; 
-        end 
+         
         if (x <= xref_muffin + 7 && x >= xref_muffin && y <= yref_muffin + 7 && y >= yref_muffin) begin
             if (m_oled != 1) pixel_data <= m_oled;
             else pixel_data <= memory[pixel_index]; 
         end 
+        
         for (i=0; i<= MAX_ENEMIES; i = i + 1) begin
             if (x <= xref_e[i] + 7 && x >= xref_e[i] && y <= yref_e[i] + 7 && y >= yref_e[i]) begin
                 if (e_oled != 1) pixel_data <= e_oled;
                 else pixel_data <= memory[pixel_index]; 
             end
+        end
+        
+        for (i=0;i<=MAX_PROJECTILES; i = i + 1) begin
+            if (p_oled != 1) pixel_data <= p_oled;
+            else pixel_data <= memory[pixel_index];
+        end
+        
+        if (x <= xref_std + 7 && x >= xref_std && y <= yref_std + 7 && y >= yref_std) begin
+            if (s_oled != 1) pixel_data <= s_oled;
+            else pixel_data <= memory[pixel_index]; 
         end
     end
     //               repeat as many times as necessary, each new statement higher priority than previous (ie overwriting if needed)
