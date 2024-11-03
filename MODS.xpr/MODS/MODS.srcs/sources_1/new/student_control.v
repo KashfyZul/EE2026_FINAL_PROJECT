@@ -19,13 +19,13 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// s1: medicine, s2: chemistry, s3: electrical engineering, s4: math, s5: business
 
-module student_control(
-    input [31:0] x, y,
-    input clock, btnU, btnL, btnR,
-    input [6:0] xref_std, [5:0] yref_std, 
-    input [6:0] xref_e1, [5:0] yref_e1, 
-    input [6:0] xref_e2, [5:0] yref_e2,
+module student_sprites(
+    input [6:0] x, [6:0]y,
+//    input [12:0] pixel_index,
+    input clock, btnU, btnL, btnR, ystationary, faceleft,
+    input [6:0] xref_std, [6:0] yref_std, 
     input [2:0] stnum,
     output reg [15:0] pixel_data
     );
@@ -35,18 +35,33 @@ module student_control(
     wire [15:0] s4_oled;
     wire [15:0] s5_oled;
     s1 draw_s1(
-        .xref(xref_std), .x(x), .yref(yref_std), .y(y), 
-        .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .oled_data(s1_oled)
+        .xref(xref_std), .yref(yref_std), .x(x), .y(y), .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .ystationary(ystationary), .faceleft(faceleft),
+        .oled_data(s1_oled)
         );
-    // repeat for s2-5
-    
-    always @ (posedge clock) begin
+    s2 draw_s2(
+        .xref(xref_std), .yref(yref_std), .x(x), .y(y), .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .ystationary(ystationary), .faceleft(faceleft),
+        .oled_data(s2_oled)
+        );
+    s3 draw_s3(
+        .xref(xref_std), .yref(yref_std), .x(x), .y(y), .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .ystationary(ystationary), .faceleft(faceleft),
+        .oled_data(s3_oled)
+        );
+    s4 draw_s4(
+        .xref(xref_std), .yref(yref_std), .x(x), .y(y), .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .ystationary(ystationary), .faceleft(faceleft),
+        .oled_data(s4_oled)
+        );
+    s5 draw_s5(
+        .xref(xref_std), .yref(yref_std), .x(x), .y(y), .clock(clock), .btnU(btnU), .btnL(btnL), .btnR(btnR), .ystationary(ystationary), .faceleft(faceleft),
+        .oled_data(s5_oled)
+        );
+
+    always @ (x, y) begin
         case (stnum)
             0: pixel_data = s1_oled;
-            // 1: pixel_data = s2_oled;
-            // 2: pixel_data = s3_oled;
-            // 3: pixel_data = s4_oled;
-            // 4: pixel_data = s5_oled;
+            1: pixel_data = s2_oled;
+            2: pixel_data = s3_oled;
+            3: pixel_data = s4_oled;
+            4: pixel_data = s5_oled;
         endcase
     end
 endmodule
