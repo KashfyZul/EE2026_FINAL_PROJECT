@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Thu Oct 31 01:44:38 2024
+-- Date        : Thu Oct 31 01:44:37 2024
 -- Host        : gskang running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/ip/blk_mem_gen_const/blk_mem_gen_const_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top blk_mem_gen_const -prefix
+--               blk_mem_gen_const_ blk_mem_gen_const_stub.vhdl
 -- Design      : blk_mem_gen_const
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1
