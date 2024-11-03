@@ -46,12 +46,17 @@ read_mem {
   C:/Users/gskan/Downloads/credits.mem
   C:/Users/gskan/Downloads/pause_screen.mem
 }
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/character_screen.v
+  C:/Users/gskan/Downloads/projectile_main.v
+  C:/Users/gskan/Downloads/projectile_types.sv
+  C:/Users/gskan/Downloads/projectiles_sprite.v
+}
 read_verilog -library xil_defaultlib {
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/flexible_clock.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/seven_seg_display.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/test_seven_segment_display.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/imports/Desktop/Oled_Display.v
-  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/character_screen.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/credits_screen.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/main_menu_screen.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/Top_Student.v
@@ -65,6 +70,12 @@ read_verilog -library xil_defaultlib {
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/poison_bottle.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/LSFR_random.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/pause_screen.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/student_sprites.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s3.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s4.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s5.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s1.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s2.v
 }
 read_vhdl -library xil_defaultlib {
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/imports/Desktop/Ps2Interface.vhd

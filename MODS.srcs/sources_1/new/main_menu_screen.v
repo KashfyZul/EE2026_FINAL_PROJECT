@@ -105,7 +105,7 @@ module main_menu_screen (
                 (x == 21 && y == 28))
             begin
                 oled_data =  16'b1111111111111111;
-            end
+            end                
         end else if (state == 1 && clk1 == 1) begin
             if ((x == 19 && y >= 35 && y <= 39) || 
                 (x == 20 && y >= 36 && y <= 38) || 

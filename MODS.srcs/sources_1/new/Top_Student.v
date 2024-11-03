@@ -33,7 +33,7 @@ module Top_Student (
     
     wire credits_next_screen, character_next_screen;
     wire [2:0] main_next_screen, pause_next_screen;
-    reg [3:0] screen_state = 4; // which screen should i use (ie main or credits)
+    reg [3:0] screen_state = 2; // which screen should i use (ie main or credits)
        
     wire clk625, clk1;
     flexible_clock clock6p25m (CLOCK, 7, clk625);
@@ -44,9 +44,9 @@ module Top_Student (
      .sample_pixel(sample_pixel), .pixel_index(pixel_index), .pixel_data(oled_data), .cs(JC[0]), .sdin(JC[1]), 
      .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));    
     
-//    credits_screen screen0 (CLOCK, btnD, btnR, pixel_index, screen_state, oled_data0, credits_next_screen);
-//    main_menu_screen screen1 (CLOCK, btnU, btnD, btnR, pixel_index, screen_state, oled_data1, main_next_screen);
-//    character_screen screen2 (CLOCK, btnU, btnD, btnL, btnR, pixel_index, screen_state, oled_data2, character_next_screen);
+    credits_screen screen0 (CLOCK, btnD, btnR, pixel_index, screen_state, oled_data0, credits_next_screen);
+    main_menu_screen screen1 (CLOCK, btnU, btnD, btnR, pixel_index, screen_state, oled_data1, main_next_screen);
+    character_screen screen2 (CLOCK, btnU, btnD, btnL, btnR, pixel_index, screen_state, oled_data2, character_next_screen);
 // game_screen screen3 (CLOCK, btnU, btnD, btnL, btnR, pixel_index, screen_state, oled_data3, game_next_screen);
     pause_screen screen4 (CLOCK, btnU, btnD, btnR, pixel_index, screen_state, oled_data4, pause_next_screen);
     
