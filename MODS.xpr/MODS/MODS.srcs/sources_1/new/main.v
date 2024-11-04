@@ -21,20 +21,14 @@
 
 
 module main(
-    input clk, btnC, btnL, btnR, btnD, btnU, [4:0]sw,  
-    output [7:0]JC, [2:0]led, [6:0]seg, [3:0]an
+    input clk, btnC, btnL, btnR, btnD, btnU,
+    output [2:0]led, [6:0]seg, [3:0]an,
+    input pause, reset,
+    input [12:0] pixel_index,
+    output reg [15:0] oled_data
     );
-    
-    
-wire frame_begin, sending_pixels, sample_pixels;
-wire [12:0] pixel_index;
 
-//wire [15:0] oled_data;
-reg [15:0] oled_data_reg;
-
-initial begin
-    oled_data_reg = 0;
-end    
+      
 
 parameter NUM_PLATFORMS = 3;    
 parameter MAX_ENEMIES = 7;
@@ -66,10 +60,6 @@ parameter enemy_spawn2 = 80; // x coordinate
 //assign {platform_x[0], platform_x[1], platform_x[2], platform_x[3], platform_x[4]} = {7'd0,7'd60,7'd30,7'd0, 7'd60} ;
 //assign {platform_y[0], platform_y[1], platform_y[2], platform_y[3], platform_y[4]} = {7'd20,7'd20,7'd40,7'd60,7'd60} ;
 
-wire pause;
-wire reset;
-assign pause = btnC;
-assign reset = 0;
 
 assign x = pixel_index % 96;
 assign y = pixel_index / 96;
@@ -82,8 +72,6 @@ wire facing;
 direction_mux choose_direction (.clk(clk), .btnL(btnL), .btnR(btnR), .btnU(btnU), .is_y_stat(is_y_stat), .x_vect(x_vect), .y_vect(y_vect), .facing(facing));
 
 
-wire [6:0] x_spawn = 48;
-wire [6:0] y_spawn = 0;
 wire [3:0] hitbox_size = 8; 
 wire [3:0] sprite_no;
 
@@ -138,10 +126,6 @@ animate #(.MAX_ENEMIES(MAX_ENEMIES), .NUM_PLATFORMS(NUM_PLATFORMS)) animate_hero
         .reset(reset), .pause(pause),
         .x_var(x_var), .y_var(y_var), .is_y_stat(is_y_stat), .sprite_no(sprite_no), .hero_hit(hero_hit));
         
-wire proj_move;
-wire proj_hit_enemy;
-wire [6:0]proj_width;
-wire [6:0]proj_height;
 
 // muffin logic
 muffinimate2 #(.NUM_PLATFORMS(NUM_PLATFORMS)) animate_muffin (.clk(clk),
@@ -154,24 +138,18 @@ muffinimate2 #(.NUM_PLATFORMS(NUM_PLATFORMS)) animate_muffin (.clk(clk),
 
 // Timothy's drawing module
 //wire [15:0]oled_data_proj; wire [15:0] oled_data_map;
-pixel_control #(.MAX_ENEMIES(MAX_ENEMIES)) pixycont (
+pixel_control #(.MAX_ENEMIES(MAX_ENEMIES), .MAX_PROJECTILES(MAX_PROJ)) pixycont (
         .x(x), .y(y), 
         .clock(clk), .btnU(btnU), .btnL(btnL), .btnR(btnR),
         .xref_std(x_var), .yref_std(y_var), .stnum(char_no), .faceleft(facing), .vertical_movement(is_y_stat),
         .xref_e(enemy_xref), .yref_e(enemy_yref), .enemy_health(enemies), .angry(angry),
         .xref_muffin(x_muff), .yref_muffin(y_muff),
-        .pixel_data(oled_data_reg)
+        .pixel_data(oled_data)
         );
 //draw_proj #(.MAX_NUM(MAX_PROJ)) drawp (.p_index(pixel_index), .active_proj(active_proj), 
 //        .xref(proj_x), .yref(proj_y), .oled_data(oled_data_proj), 
 //        .h(proj_h), .w(proj_w));
 
-wire clk6p25m;
-flexy_clock clk_6p25MHz (.clk(clk), .m_value(7), .slow_clk(clk6p25m));
-// 3.A1: instantiate Oled_Display
-Oled_Display Q3A1 (.clk(clk6p25m), .reset(0), .frame_begin(frame_begin), .sending_pixels(sending_pixels),
-  .sample_pixel(sample_pixels) , .pixel_index(pixel_index), .pixel_data(oled_data_reg), .cs(JC[0]), .sdin(JC[1]), 
-  .sclk(JC[3]), .d_cn(JC[4]), .resn(JC[5]), .vccen(JC[6]), .pmoden(JC[7]));
   
 //  always @(pixel_index) begin 
 //      oled_data_reg <= oled_data_map;

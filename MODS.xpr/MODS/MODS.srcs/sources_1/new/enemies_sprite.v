@@ -21,7 +21,7 @@
 
 // systemverilog file
 
-module enemies_sprite #(parameter MAX_NUM_ENEMIES = 14)(
+module enemies_sprite #(parameter MAX_NUM_ENEMIES = 5)(
     input [6:0] x, input [6:0] y,
     input [3:0] enemy_health [0:MAX_NUM_ENEMIES], input [MAX_NUM_ENEMIES:0] angry,
     input [6:0] xref [0:MAX_NUM_ENEMIES], input [6:0] yref [0:MAX_NUM_ENEMIES],

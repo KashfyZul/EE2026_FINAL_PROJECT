@@ -21,7 +21,7 @@
 
 
 module muffin_sprite (
-    input [6:0] x, y, xref, yref,
+    input [6:0] x, [6:0] y, [6:0] xref, [6:0] yref,
     input clock,
     output reg [15:0] oled_data
     );
