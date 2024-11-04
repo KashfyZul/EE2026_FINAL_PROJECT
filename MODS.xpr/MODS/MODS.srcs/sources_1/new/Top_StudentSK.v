@@ -20,7 +20,7 @@ module Top_StudentSK (
     output [2:0] led,
     output [7:0] JC  
 );
-
+    
     localparam CREDITS_SCREEN  = 0;
     localparam MAIN_MENU_SCREEN = 1;
     localparam CHARACTER_SCREEN = 2;
@@ -52,8 +52,6 @@ module Top_StudentSK (
         seg, an, led, reset, pause);
     pause_screen screen4 (clk, btnU, btnD, btnR, pixel_index, screen_state, oled_data4, pause_next_screen);
     
-    
-
     always @ (posedge clk) 
     begin
             
@@ -61,18 +59,17 @@ module Top_StudentSK (
         begin
         
             oled_data <= oled_data0;
+            reset = 1;
+            pause = 0;
             if (credits_next_screen) screen_state <= MAIN_MENU_SCREEN;
             
         end else if (screen_state == MAIN_MENU_SCREEN) 
         begin
         
             oled_data <= oled_data1;
-            if (main_next_screen == 1) 
-            begin
-                screen_state <= GAME_SCREEN;
-                reset <= 1;
-                pause <= 0;
-            end                        
+            reset = 1;
+            pause = 0;
+            if (main_next_screen == 1) screen_state <= GAME_SCREEN;
             
             else if (main_next_screen == 2) screen_state <= CHARACTER_SCREEN;
             else if (main_next_screen == 3) screen_state <= CREDITS_SCREEN;
@@ -81,24 +78,25 @@ module Top_StudentSK (
         begin
         
             oled_data <= oled_data2;
+            reset = 1;
+            pause = 0;
             if (character_next_screen) screen_state <= MAIN_MENU_SCREEN;
             
         end
         else if (screen_state == GAME_SCREEN) 
         begin
             oled_data <= oled_data3;
-            
-            if (reset) reset <= 0;
-            if (pause) pause <= 0;
+            reset = 0;
+            pause = 0;
 
             if (game_next_screen == 1) screen_state <= PAUSE_SCREEN;
             else if (game_next_screen == 2) screen_state <= MAIN_MENU_SCREEN;
-            
         end
         else if (screen_state == PAUSE_SCREEN) 
         begin
             oled_data <= oled_data4;
-            pause <= 1;
+            pause = 1;
+            reset = 0;
             if (pause_next_screen == 1) screen_state <= GAME_SCREEN;
             else if (pause_next_screen == 2) screen_state <= MAIN_MENU_SCREEN;
         end

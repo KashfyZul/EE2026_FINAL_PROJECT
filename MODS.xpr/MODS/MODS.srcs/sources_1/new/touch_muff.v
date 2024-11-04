@@ -29,23 +29,24 @@ module touch_muff(
     wire damage_clk;
     flexy_clock(.clk(clk), .m_value(1_249_999), .slow_clk(damage_clk)); // every 1ms
     
-    localparam N = 5; // number of characters    
+    localparam N = 4; // number of characters    
     wire [11:0]random_counter; // count from 0 to 4
     LFSR_random rng (.CLOCK(clk), .rst(reset), .n(N), .random(random_counter));
     
     initial begin
         muff_count = 0;
     end
-    
+   
     always @ (posedge damage_clk) begin
         if (!pause) begin
             if (reset) begin
                 muff_count = 0;
             end
-            
+           
             if (hit_muff) begin            
                 muff_count = muff_count + 1;
-                char_no = ((char_no + ((random_counter + 1) % (N - 1))) + 1) % N;        
+//                char_no = ((char_no + ((random_counter + 1) % (N - 1))) + 1) % N;  
+                char_no = (char_no + 1 + random_counter[2:0])  % 5;       
             end
         end
     end

@@ -139,11 +139,11 @@ muffinimate2 #(.NUM_PLATFORMS(NUM_PLATFORMS)) animate_muffin (.clk(clk),
 // Timothy's drawing module
 //wire [15:0]oled_data_proj; wire [15:0] oled_data_map;
 pixel_control #(.MAX_ENEMIES(MAX_ENEMIES), .MAX_PROJECTILES(MAX_PROJ)) pixycont (
-        .x(x), .y(y), 
+        .x(x), .y(y), .is_active(active_proj),
         .clock(clk), .btnU(btnU), .btnL(btnL), .btnR(btnR),
         .xref_std(x_var), .yref_std(y_var), .stnum(char_no), .faceleft(facing), .vertical_movement(is_y_stat),
         .xref_e(enemy_xref), .yref_e(enemy_yref), .enemy_health(enemies), .angry(angry),
-        .xref_muffin(x_muff), .yref_muffin(y_muff),
+        .xref_muffin(x_muff), .yref_muffin(y_muff), .xref_p(proj_x), .yref_p(proj_y),
         .pixel_data(oled_data)
         );
 //draw_proj #(.MAX_NUM(MAX_PROJ)) drawp (.p_index(pixel_index), .active_proj(active_proj), 

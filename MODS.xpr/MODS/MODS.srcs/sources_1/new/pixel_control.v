@@ -29,7 +29,7 @@ module pixel_control #(parameter MAX_ENEMIES = 5, parameter MAX_PROJECTILES = 5)
     input [6:0] xref_e [0:MAX_ENEMIES], input [6:0] yref_e [0:MAX_ENEMIES], input [3:0] enemy_health [0:MAX_ENEMIES], input [MAX_ENEMIES:0] angry,
     input [6:0] xref_muffin, [6:0] yref_muffin, [6:0] xref_p [0:MAX_PROJECTILES], [6:0] yref_p [0:MAX_PROJECTILES],
     input [2:0] stnum,
-    input [5:0] is_active, 
+    input [MAX_PROJECTILES:0] is_active, 
     output reg [15:0] pixel_data
     ); 
     reg [12:0] pixel_index;

@@ -26,10 +26,11 @@ module LFSR_random #(
     input CLOCK,
     input rst,             // Reset signal
     input [11:0] n,         // max values that can be produced
-    output reg [11:0] random // 12-bit random number output
+    output reg [11:0] random = 0 // 12-bit random number output
 );
 
     reg [11:0] lfsr = LFSR; // Register to hold the LFSR value
+
 
     always @(posedge CLOCK or posedge rst) begin
         if (rst) begin
