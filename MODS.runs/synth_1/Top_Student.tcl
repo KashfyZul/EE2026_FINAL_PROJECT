@@ -76,6 +76,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s5.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s1.v
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/s2.v
+  C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/new/game_screen.v
 }
 read_vhdl -library xil_defaultlib {
   C:/Users/gskan/Downloads/MODS2.xpr/MODS/MODS.srcs/sources_1/imports/Desktop/Ps2Interface.vhd

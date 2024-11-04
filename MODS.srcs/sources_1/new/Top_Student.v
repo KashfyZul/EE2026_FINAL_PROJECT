@@ -17,6 +17,7 @@ module Top_Student (
     input btnU, btnD, btnC, btnR, btnL,
     output [3:0] an,
     output [6:0] seg,
+    output [2:0] led,
     output [7:0] JC  
 );
 
@@ -32,8 +33,10 @@ module Top_Student (
     wire frame_begin, sending_pixels, sample_pixel;
     
     wire credits_next_screen, character_next_screen;
-    wire [2:0] main_next_screen, pause_next_screen;
+    wire [2:0] main_next_screen, pause_next_screen, game_next_screen;
     reg [3:0] screen_state = 2; // which screen should i use (ie main or credits)
+    reg reset = 0;
+    reg pause = 0;
        
     wire clk625, clk1;
     flexible_clock clock6p25m (CLOCK, 7, clk625);
@@ -47,7 +50,8 @@ module Top_Student (
     credits_screen screen0 (CLOCK, btnD, btnR, pixel_index, screen_state, oled_data0, credits_next_screen);
     main_menu_screen screen1 (CLOCK, btnU, btnD, btnR, pixel_index, screen_state, oled_data1, main_next_screen);
     character_screen screen2 (CLOCK, btnU, btnD, btnL, btnR, pixel_index, screen_state, oled_data2, character_next_screen);
-// game_screen screen3 (CLOCK, btnU, btnD, btnL, btnR, pixel_index, screen_state, oled_data3, game_next_screen);
+    game_screen screen3 (CLOCK, btnU, btnD, btnL, btnR, btnC, pixel_index, screen_state, oled_data3, game_next_screen, 
+        seg, an, led, reset, pause);
     pause_screen screen4 (CLOCK, btnU, btnD, btnR, pixel_index, screen_state, oled_data4, pause_next_screen);
     
     seven_seg_display dis (seg_counter, CLOCK, an, seg);
@@ -70,7 +74,13 @@ module Top_Student (
         begin
         
             oled_data <= oled_data1;
-            if (main_next_screen == 1) screen_state <= GAME_SCREEN;
+            if (main_next_screen == 1) 
+            begin
+                screen_state <= GAME_SCREEN;
+                reset <= 1;
+                pause <= 0;
+            end                        
+            
             else if (main_next_screen == 2) screen_state <= CHARACTER_SCREEN;
             else if (main_next_screen == 3) screen_state <= CREDITS_SCREEN;
         
@@ -81,7 +91,23 @@ module Top_Student (
             if (character_next_screen) screen_state <= MAIN_MENU_SCREEN;
             
         end
-//        else if (screen_state == GAME_SCREEN) oled_data <= oled_data3;
-        else if (screen_state == PAUSE_SCREEN) oled_data <= oled_data4;
+        else if (screen_state == GAME_SCREEN) 
+        begin
+            oled_data <= oled_data3;
+            
+            if (reset) reset <= 0;
+            if (pause) pause <= 0;
+
+            if (game_next_screen == 1) screen_state <= PAUSE_SCREEN;
+            else if (game_next_screen == 2) screen_state <= MAIN_MENU_SCREEN;
+            
+        end
+        else if (screen_state == PAUSE_SCREEN) 
+        begin
+            oled_data <= oled_data4;
+            pause <= 1;
+            if (pause_next_screen == 1) screen_state <= GAME_SCREEN;
+            else if (pause_next_screen == 2) screen_state <= MAIN_MENU_SCREEN;
+        end
     end           
 endmodule

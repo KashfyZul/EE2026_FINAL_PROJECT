@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730675015">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1730678219">
   <File Type="PA-TCL" Name="Top_Student.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Top_Student_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Student_reports.tcl"/>
@@ -326,6 +326,13 @@
     </File>
     <File Path="$PPRDIR/../../projectiles_sprite.v">
       <FileInfo SFType="SVerilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_screen.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
